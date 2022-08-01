@@ -1,0 +1,101 @@
+body {
+  background: #f0f0f0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  font-family: "Santander Micro Text";
+}
+
+.button01 {
+  --bg-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(30, 31, 33);
+  --box-shadow-color: rgb(216, 216, 233);
+  --transform: translateY(0px) scale(1.030) translateZ(0);
+}
+
+.button02 {
+  --bg-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(30, 31, 33);
+  --box-shadow-color: rgb(216, 216, 233);
+  --transform: translateY(7px) scale(1.020) translateZ(0);
+}
+
+.button03 {
+  --bg-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(30, 31, 33);
+  --box-shadow-color: rgb(216, 216, 233);
+  --transform: translateY(-5px) scale(1.005) translateZ(0);
+}
+
+
+.button04 {
+  --bg-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(30, 31, 33);
+  --box-shadow-color: rgb(216, 216, 233);
+  --transform: translateY(5px) scale(1.005) translateZ(0);
+}
+
+.button05 {
+  --bg-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(30, 31, 33);
+  --box-shadow-color: rgb(216, 216, 233);
+  --transform: translateY(5px) scale(1.005) translateZ(0);
+}
+
+.button06 {
+  --bg-color: rgb(255, 255, 255);
+  --text-color-hover: rgb(30, 31, 33);
+  --box-shadow-color: rgb(216, 216, 233);
+  --transform: translateY(5px) scale(1.005) translateZ(0);
+}
+
+.button {
+  width: 113px;
+  height: 122px;
+  background: var(--bg-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 14px 26px rgb(216, 216, 233);
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: var(--transform);
+  box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+    0px 5px 25px var(--box-shadow-color);
+}
+
+.button:hover p {
+  color: var(--text-color-hover);
+}
+
+.button:active {
+  transform: scale(1) translateZ(0);
+  box-shadow: 0 15px 24px rgba(0, 0, 0, 0.11),
+    0 5px 15px var(--box-shadow-color);
+}
+
+.button p {
+  font-size: 14px;
+  text-align: center;
+  color: #4C5656;
+  margin-top: 0px;
+  position: relative;
+  z-index: 1000;
+  transition: color 0.3s ease-out;
+}
+
+.icono {
+  margin-top: 20px;
+  z-index: 1000;
+  position: relative;
+  transition: all 0.3s ease-out;
+}
